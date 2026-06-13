@@ -132,55 +132,29 @@ Sistem Manajemen Aset dan Barang Inventaris Kantor adalah aplikasi berbasis web 
 
 ## 6. Diagram Proses (Use Case & Flowchart)
 
-Aktor: Admin, Manajer Aset, Staff Inventaris, Kepala Departemen, Kepala Kantor
+<img width="1440" height="2960" alt="image" src="https://github.com/user-attachments/assets/c33b30f5-61f3-40b7-8edd-b57ccfa62f78" />
+- Berikut alur peminjaman aset dari awal sampai selesai:
 
-Use Case:
-UC-001: Login/Logout
-  - Aktor: Semua
-  - Proses: User login/logout dari sistem
+ 1. Karyawan login ke sistem
+ 2. Cari aset di katalog (filter kategori/lokasi)
+ 3. Cek ketersediaan aset — jika tidak tersedia, pilih aset lain dan ulangi dari langkah 2
+ 4. Isi formulir peminjaman (aset, tujuan, durasi)
+ 5. Sistem kirim notifikasi ke manajer untuk persetujuan
+ 6. Manajer review dan setujui — jika ditolak, karyawan menerima notifikasi penolakan dan proses berhenti
+ 7. Staf logistik lakukan serah terima fisik aset ke karyawan
+ 8. Status aset diperbarui menjadi "Dipinjam", sistem catat tanggal dan waktu
+ 9. Karyawan gunakan aset — sistem kirim pengingat otomatis jika mendekati batas waktu pengembalian
+ 10. Karyawan kembalikan aset, staf periksa kondisi — jika rusak dijadwalkan perbaikan, status aset kembali menjadi "Tersedia"
 
-UC-002: Manajemen User
-  - Aktor: Admin
-  - Proses: Tambah, edit, hapus user
-
-UC-003: CRUD Kategori
-  - Aktor: Manajer Aset
-  - Proses: Kelola kategori aset
-
-UC-004: CRUD Lokasi
-  - Aktor: Manajer Aset
-  - Proses: Kelola lokasi/departemen
-
-UC-005: CRUD Aset
-  - Aktor: Manajer Aset, Staff Inventaris
-  - Proses: Tambah, edit, hapus, lihat aset
-
-UC-006: Update Status Aset
-  - Aktor: Staff Inventaris, Manajer Aset
-  - Proses: Ubah status aset
-
-UC-007: Pemeriksaan Fisik
-  - Aktor: Staff Inventaris
-  - Proses: Lakukan physical check aset
-
-UC-008: Generate Laporan
-  - Aktor: Manajer Aset, Kepala Kantor
-  - Proses: Buat laporan aset
-
-UC-009: View Dashboard
-  - Aktor: Admin, Manajer Aset, Kepala Kantor
-  - Proses: Lihat statistik aset
-
-UC-010: Export Data
-  - Aktor: Manajer Aset, Kepala Kantor
-  - Proses: Download laporan ke Excel/PDF
 
 ---
 
 ## 7. Pembagian Tugas Anggota
 
-Silakan lihat file `TEAM_ASSIGNMENT.md`
-
+1. Dwiansyah Ananta Tulus 2501020127 (deskripsi kasus, latar belakang beserta tujuan)
+2. Raihan Febrian 2501020092 (identifikasi Aktor Dan Kebutuhan Fungsional)
+3. Fathar Sabil Abdullah 2501020105 (kebutuhan fungsional Dan Kebutuhan Data)
+   
 ---
 
 ## 8. Link Repository GitHub
