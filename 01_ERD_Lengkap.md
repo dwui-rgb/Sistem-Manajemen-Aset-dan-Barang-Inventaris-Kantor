@@ -12,7 +12,7 @@
 ┌──────────────┐         ┌──────────────┐         ┌──────────────┐
 │   PEGAWAI    │         │    ASET      │         │   BARANG     │
 ├──────────────┤         ├──────────────┤         ├──────────────┤
-��� id_pegawai(PK)         │ id_aset(PK)  │         │ id_barang(PK)│
+│ id_pegawai(PK)         │ id_aset(PK)  │         │ id_barang(PK)│
 │ nama         │         │ kode_aset    │         │ kode_barang  │
 │ nip          │         │ nama_aset    │         │ nama_barang  │
 │ bagian       │         │ kategori     │         │ kategori     │
@@ -43,7 +43,7 @@
 
                     TABEL RELASI LAINNYA
 
-┌──────────────┐         ┌──────────────┐         ┌──────────────┐
+┌──────────────┐         ┌──────────────┐         ┌─────────────���┐
 │  KATEGORI    │         │   LOKASI     │         │ PENGGUNA     │
 ├──────────────┤         ├──────────────┤         ├──────────────┤
 │ id_kategori  │         │ id_lokasi    │         │ id_pengguna  │
